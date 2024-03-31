@@ -1,25 +1,5 @@
 import csv
 
-# def split_array(array):
-#     # Define separator
-#     separator = ';'
-
-#     # Split each element of the array
-#     split_array = []
-#     current_element = ''
-#     for element in array:
-#         if '"' in element:
-#             current_element += element
-#             if current_element.count('"') % 2 != 0:
-#                 continue
-#         else:
-#             current_element += element
-
-#         split_array.append(current_element)
-#         current_element = ''
-
-#     return split_array
-
 def split_ignore_quotes(text, separator=';'):
     result = []
     inside_quotes = False
